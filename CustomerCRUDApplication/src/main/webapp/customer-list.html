@@ -1,0 +1,100 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer List</title>
+</head>
+<body>
+
+    <h2>Customer List</h2>
+    <button onclick="syncCustomers()">Sync</button>
+    <table id="customerTable" border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Street</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Customer rows will be inserted here -->
+     <!-- </table>  
+        </tbody>
+    <script>
+        function fetchCustomers() {
+            const token = localStorage.getItem('token');
+            fetch('/api/customers', {
+                headers: {
+                    'Authorization': 'Bearer ' + token
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.querySelector('#customerTable tbody');
+                tableBody.innerHTML = '';
+                data.forEach(customer => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${customer.id}</td>
+                        <td>${customer.first_name}</td>
+                        <td>${customer.last_name}</td>
+                        <td>${customer.street}</td>
+                        <td>${customer.address}</td>
+                        <td>${customer.city}</td>
+                        <td>${customer.state}</td>
+                        <td>${customer.email}</td>
+                        <td>${customer.phone}</td>
+                        <td>
+                            <button onclick="editCustomer(${customer.id})">Edit</button>
+                            <button onclick="deleteCustomer(${customer.id})">Delete</button>
+                        </td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            });
+        }
+
+        function syncCustomers() {
+            const token = localStorage.getItem('token');
+            fetch('https://qa.sunbasedata.com/sunbase/portal/api/assignment.jsp?cmd=get_customer_list', {
+                method: 'GET',
+                headers: {
+                    'Authorization': 'Bearer ' + token
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Handle syncing logic here, e.g., send data to your backend for processing
+                console.log('Sync data:', data);
+            });
+        }
+
+        function editCustomer(id) {
+            window.location.href = 'add-customer.html?id=' + id;
+        }
+
+        function deleteCustomer(id) {
+            const token = localStorage.getItem('token');
+            fetch('/api/customers/' + id, {
+                method: 'DELETE',
+                headers: {
+                    'Authorization': 'Bearer ' + token
+                }
+            })
+            .then(() => fetchCustomers())
+            .catch(error => console.error('Error deleting customer:', error));
+        }
+
+        // Fetch customers when the page loads
+        window.onload = fetchCustomers;
+    </script>
+</body>
+ 
+</html> -->

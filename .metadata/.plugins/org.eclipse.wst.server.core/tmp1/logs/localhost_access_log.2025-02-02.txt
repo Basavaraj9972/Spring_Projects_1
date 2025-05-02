@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [02/Feb/2025:00:04:14 +0530] "GET /SpringMVCProject/index.html HTTP/1.1" 200 488
+0:0:0:0:0:0:0:1 - - [02/Feb/2025:00:04:40 +0530] "GET /SpringMVCProject/first?name=Basavaraj&age=24&email=basavarajkalyani976%40gmail.com&password=Bassu%401234 HTTP/1.1" 200 490
+0:0:0:0:0:0:0:1 - - [02/Feb/2025:00:05:58 +0530] "GET /SpringMVCProject/first?name=Basavaraj&age=24&email=basavarajkalyani976%40gmail.com&password=Bassu%401234 HTTP/1.1" 500 4573
+0:0:0:0:0:0:0:1 - - [02/Feb/2025:00:05:59 +0530] "GET /SpringMVCProject/first?name=Basavaraj&age=24&email=basavarajkalyani976%40gmail.com&password= HTTP/1.1" 500 11109
+0:0:0:0:0:0:0:1 - - [02/Feb/2025:00:06:02 +0530] "GET /SpringMVCProject/first?name=Basavaraj&age=24&email=basavarajkalyani976%40gmail.com&password= HTTP/1.1" 500 11109
+0:0:0:0:0:0:0:1 - - [02/Feb/2025:00:06:03 +0530] "GET /SpringMVCProject/first?name=Basavaraj&age=24&email=basavarajkalyani976%40gmail.com&password= HTTP/1.1" 500 11109
+0:0:0:0:0:0:0:1 - - [02/Feb/2025:00:06:04 +0530] "GET /SpringMVCProject/first?name=Basavaraj&age=24&email=basavarajkalyani976%40gmail.com&password= HTTP/1.1" 500 11109
+0:0:0:0:0:0:0:1 - - [02/Feb/2025:00:06:08 +0530] "GET /SpringMVCProject/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [02/Feb/2025:00:06:22 +0530] "GET /SpringMVCProject/first?name=Basavaraj&age=24&email=basavarajkalyani976%40gmail.com&password=Bassu%401233 HTTP/1.1" 500 11109

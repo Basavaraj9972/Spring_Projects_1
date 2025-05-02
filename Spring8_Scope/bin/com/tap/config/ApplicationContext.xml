@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class ="com.tap.pojo.Address" id="add1">
+    <property name="laneNum" value="1"></property>
+    <property name="city" value="1"></property>
+    <property name="state" value="1"></property>
+    <property name="country" value="1"></property>
+    
+    </bean>
+    
+  <bean class="com.tap.pojo.Employee" id="emp1" scope="prototype">
+  <property name="id" value="1"></property>
+  <property name="name" value="Basavaraj"></property>
+  <property name="email" value="basavarajkalyani976@gmail.com"></property>
+  <property name="salary" value="1000000"></property>
+  <property name="address" ref="add1"></property>
+  
+  </bean>
+  
+  
+	
+
+</beans>

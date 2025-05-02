@@ -1,0 +1,9 @@
+127.0.0.1 - - [26/Dec/2024:21:32:36 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [26/Dec/2024:21:33:26 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Dec/2024:21:33:26 +0530] "GET /SpringMVC/index.html HTTP/1.1" 200 475
+0:0:0:0:0:0:0:1 - - [26/Dec/2024:21:33:27 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [26/Dec/2024:21:33:48 +0530] "GET /SpringMVC/first?id=2&name=gfhg&age=24&email=basavaraj%40modlix.com HTTP/1.1" 500 2462
+127.0.0.1 - - [26/Dec/2024:21:43:24 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Dec/2024:21:43:25 +0530] "GET /SpringMVCProject/index.html HTTP/1.1" 200 473
+0:0:0:0:0:0:0:1 - - [26/Dec/2024:21:43:58 +0530] "GET /SpringMVCProject/first?id=22&name=basavaraj&age=24&email=basavarajkalyani976%40gmail.com HTTP/1.1" 200 441
+0:0:0:0:0:0:0:1 - - [26/Dec/2024:21:44:39 +0530] "GET /SpringMVCProject/nextPage?name=basavaraj HTTP/1.1" 404 780
